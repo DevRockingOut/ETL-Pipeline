@@ -72,7 +72,14 @@ def getData(driver):
     return products
     
     
-def run():
-    getPageContents('https://www.rrpcanada.org/#/')
+def run(i, secs):
+    while i > 0:
+        getPageContents('https://www.rrpcanada.org/#/')
+        time.sleep(secs)  # wait x seconds before getting new data
+        i -= 1
 
-run()
+
+if len(sys.argv) > 1:
+    run(int(sys.argv[1]), int(sys.argv[2]))
+else:
+    run(1, 0)
