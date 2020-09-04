@@ -1,4 +1,4 @@
-#How to run the code
+# How to run the code
 
 To run web_scraper.py, the following packages need to be installed on the system:
 
@@ -18,7 +18,7 @@ The WebApp folder contains the website based on the Laravel 7.x MVC framerwork:
 - Run the web app with the command `php artisan serve`
 
 
-#How it works
+# How it works
 
 The files web_scraper.py contain the code used to extract data 
 from the website https://www.rrpcanada.org/#/ and save it on a mongo database in the cloud.<br />
